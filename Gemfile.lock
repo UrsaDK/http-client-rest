@@ -2,85 +2,71 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    bond (0.5.1)
-    byebug (10.0.2)
+    byebug (11.1.3)
     coderay (1.1.2)
     diff-lcs (1.3)
-    docile (1.3.1)
-    domain_name (0.5.20180417)
+    docile (1.3.2)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    jaro_winkler (1.5.1)
-    json (2.1.0)
-    method_source (0.9.0)
-    mime-types (3.2.2)
+    method_source (1.0.0)
+    mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
-    mini_portile2 (2.3.0)
+    mime-types-data (3.2020.0512)
     netrc (0.11.0)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
-    openssl (2.1.1)
-    parallel (1.12.1)
-    parser (2.5.1.2)
+    openssl (2.2.0)
+    parallel (1.19.1)
+    parser (2.7.1.2)
       ast (~> 2.4.0)
-    powerpack (0.1.2)
-    pry (0.11.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
-    pry-bond (0.0.1)
-      bond (~> 0.5)
-      rb-readline (~> 0.5)
-    pry-byebug (3.6.0)
-      byebug (~> 10.0)
-      pry (~> 0.10)
-    pry-highlight (0.1.0)
-      coderay
-      json
-      nokogiri
-      pry
-    pry-rails (0.3.6)
-      pry (>= 0.10.4)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
     rainbow (3.0.0)
-    rb-readline (0.5.5)
-    rest-client (2.0.2)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rspec (3.8.0)
-      rspec-core (~> 3.8.0)
-      rspec-expectations (~> 3.8.0)
-      rspec-mocks (~> 3.8.0)
-    rspec-core (3.8.0)
-      rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.1)
+    rexml (3.2.4)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.2)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
-    rspec-mocks (3.8.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
-    rspec-support (3.8.0)
-    rubocop (0.59.1)
-      jaro_winkler (~> 1.5.1)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.3)
+    rubocop (0.84.0)
       parallel (~> 1.10)
-      parser (>= 2.5, != 2.5.1.1)
-      powerpack (~> 0.1)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
+      rexml
+      rubocop-ast (>= 0.0.3)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (~> 1.0, >= 1.0.1)
-    rubocop-rspec (1.29.1)
-      rubocop (>= 0.58.0)
-    ruby-progressbar (1.10.0)
-    simplecov (0.16.1)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (0.0.3)
+      parser (>= 2.7.0.1)
+    rubocop-rspec (1.39.0)
+      rubocop (>= 0.68.1)
+    ruby-progressbar (1.10.1)
+    simplecov (0.18.5)
       docile (~> 1.1)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.2)
+      simplecov-html (~> 0.11)
+    simplecov-html (0.12.2)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
-    unicode-display_width (1.4.0)
+    unf_ext (0.0.7.7)
+    unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
@@ -88,15 +74,15 @@ PLATFORMS
 DEPENDENCIES
   openssl
   pry
-  pry-bond
   pry-byebug
-  pry-highlight
-  pry-rails
   rest-client
   rspec
   rubocop
   rubocop-rspec
   simplecov
 
+RUBY VERSION
+   ruby 2.5.5p157
+
 BUNDLED WITH
-   1.16.2
+   2.0.2

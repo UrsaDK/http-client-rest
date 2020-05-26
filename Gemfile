@@ -1,19 +1,19 @@
+# frozen_string_literal: true
+
+ruby File.read('.ruby-version').strip
 source 'https://rubygems.org'
 
 gem 'openssl'
 gem 'rest-client'
 
-# bundle --without development
-group :development do
-  gem 'pry', require: false             # An alternative IRB console
-  gem 'pry-bond', require: false        # Input completion in pry console
-  gem 'pry-byebug', require: false      # Adds step, next, continue & break
-  gem 'pry-highlight', require: false   # Highlight and prettify console output
-  gem 'pry-rails'                       # Use Pry as your rails console
+# bundle --without development --without test
+%i[development test].tap do |groups|
+  gem 'pry', group: groups, require: true
+  gem 'pry-byebug', group: groups, require: false
 end
 
-# bundle --without tests
-group :tests do
+# bundle --without test
+group :test do
   gem 'rspec', require: false           # Test driven development
   gem 'rubocop', require: false         # Static code analyzer
   gem 'rubocop-rspec', require: false   # Rubocop checker for rspec
